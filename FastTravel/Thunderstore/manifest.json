@@ -1,0 +1,10 @@
+{
+  "name": "FastTravel",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/tari-cat/FastTravel",
+  "description": "Adds an app to the phone to call for a taxi.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "tari-CustomAppAPI-1.0.0"
+  ]
+}
