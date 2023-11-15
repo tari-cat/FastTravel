@@ -17,6 +17,11 @@ namespace FastTravel
             MyPhone.CloseCurrentApp();
             MyPhone.TurnOff();
 
+            if (!Core.Instance.SaveManager.CurrentSaveSlot.GetCurrentStageProgress().taxiFound)
+            {
+                return;
+            }
+
             Taxi taxi = FindObjectOfType<Taxi>(true); // the only time findobjectoftype is somewhat acceptable
             if (taxi == null)
             {
